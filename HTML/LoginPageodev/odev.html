@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="icon" href="book.ico">
+    <title>LoginPageBooks</title>
+    <script>
+        function attention()
+        {
+            attention("Logged in");
+        }
+    </script>
+
+    <style>
+        *{
+        padding: 0px;
+        margin: 0px;
+         }
+
+        body{
+            background-image: url(gradient.jfif);           
+            background-size: cover;          
+            height: 100vh; 
+        }
+        .content{
+            width: 32%;
+            height: 90vh;
+            background-color: white;
+            font-family: 'Poppins';
+            position: absolute;
+            left: 34%;
+            top: 5%;
+            justify-content: center;
+            align-items: center;
+            border-radius: 2%;
+           
+
+        }
+        .main{
+            padding: 20px 30px 30px 20px; 
+        }
+
+        h1{
+            /* font-family: 'Poppins';   */
+            font-size: 30px;
+            font-weight: 700;
+            text-align: center;
+            
+        }
+        .form-group>select{
+            width: 80%;
+            height: 60px;
+            margin-left: 10%;
+            font-weight: bold;
+            font-size: 16px;
+            border: none;
+            border-bottom: 1px solid;
+            position: relative;           
+          
+        }
+        .form-group>input{
+            width: 80%;
+            height: 60px;
+            margin-left: 10%;
+            font-weight: 400;
+            font-size: 14px;
+            border: none;
+            border-bottom: 1px solid;
+            position: relative;           
+          
+        }
+        .form-group>label{
+            margin: 10%;
+
+        }
+        .form-group>textarea{
+            width: 80%;
+            height: 150px;
+            border: none;
+            border-bottom: 1px solid;
+            margin-left: 10%;
+            font-size: 14px; 
+        }
+        
+        .button{
+            color: white;
+            width: 80%;
+            height: 5vh;
+            margin: 10%;
+            font-size: 16px;            
+            border-radius: 20px;
+            border: none;
+            background: linear-gradient(130deg,rgba(0,236,240,1) 0%, rgba(230,48,254,1) 100%);;
+
+        }
+
+
+    </style>
+   
+</head>
+<body>
+    <div class="content">
+        <div class="main"   style="margin-top:29px">
+            <h1>Say Hello!</h1>
+            <div class="form-group" style="margin-top:22px">
+                <label>Your Name</label>
+                <input type="text" placeholder="Enter your name">
+                
+            </div>
+            <div class="form-group" style="margin-top:16px">
+                <label>Email</label>
+                <input type="text" placeholder="Enter your email address">
+                
+            </div>
+            <div class="form-group" style="margin-top:16px">
+                <label>Needed Services</label>
+                <!-- <input type="text" placeholder="Choose Services"> -->
+                <select>
+                <option selected >Choose Services</option>
+                <option>Option 1</option>
+                <option>Option 2</option>
+                <option>Option 3</option>
+                </select>
+
+            </div>
+            <div class="form-group" style="margin-top:16px">
+                <label>Budget</label>              
+                <select>
+                <option selected >Choose Budget</option>
+                <option>Option 1</option>
+                <option>Option 2</option>
+                <option>Option 3</option>
+                </select>
+
+            </div>
+            <div class="form-group"  style="margin-top:16px">
+                <label>Message</label>
+                <textarea name="Message" id="Miko" cols="30" rows="10"
+                type="text"  placeholder="Your message here....."
+                style="font-family: poppins;"></textarea>
+                
+                <!-- <input class=Message style="height: 160px;" type="text" 
+                placeholder="Your message here....."> -->
+            </div>                      
+        </div>
+        <button class="button" style="margin-top:12px" color:white onclick="attention">
+        Submit <i class="fa-solid fa-arrow-right-long"></i>
+
+        </button>
+
+    </div>
+
+        
+
+</body>
+</html>
